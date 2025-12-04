@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/website-optimization/page": "app/website-optimization/page.js",
+  "/web-development/page": "app/web-development/page.js"
+}
