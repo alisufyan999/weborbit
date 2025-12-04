@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { FileText, Search, Users, MessageSquare, Target, ArrowRight } from "lucide-react";
 import { RadialGlow } from "@/components/graphics/GridPattern";
+import Image from "next/image";
 
 export function WebDevCopywriting() {
   return (
@@ -71,10 +72,11 @@ export function WebDevCopywriting() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Copy mockup */}
-                <div className="aspect-[4/5] bg-gradient-to-br from-background via-muted/20 to-background rounded-xl p-6 overflow-hidden relative">
-                  {/* Document style */}
+                <Image src="/assets/images/webdevelopment/words-that-convert-visitors-into-customers.png" alt="Web development copywriting" width={600} height={500} />
+                {/* <div className="aspect-[4/5] bg-gradient-to-br from-background via-muted/20 to-background rounded-xl p-6 overflow-hidden relative">
+                  
                   <div className="space-y-6">
-                    {/* Headline */}
+                    
                     <div className="space-y-2">
                       <motion.div 
                         className="h-6 bg-primary/30 rounded w-4/5"
@@ -99,7 +101,6 @@ export function WebDevCopywriting() {
                       />
                     </div>
                     
-                    {/* Pain points */}
                     <div className="space-y-2">
                       {[1, 2, 3].map((i) => (
                         <motion.div 
@@ -118,7 +119,6 @@ export function WebDevCopywriting() {
                       ))}
                     </div>
                     
-                    {/* Solution */}
                     <div className="space-y-2">
                       <motion.div 
                         className="h-5 bg-secondary/30 rounded w-2/3"
@@ -143,7 +143,6 @@ export function WebDevCopywriting() {
                       />
                     </div>
                     
-                    {/* CTA */}
                     <motion.div 
                       className="h-10 bg-primary/40 rounded-lg w-1/2"
                       initial={{ opacity: 0, scale: 0.9 }}
@@ -153,7 +152,6 @@ export function WebDevCopywriting() {
                     />
                   </div>
                   
-                  {/* Annotations */}
                   <motion.div
                     className="absolute top-8 -right-2 glass-card px-2 py-1 rounded text-xs text-primary font-medium"
                     initial={{ opacity: 0 }}
@@ -183,7 +181,8 @@ export function WebDevCopywriting() {
                   >
                     Solution
                   </motion.div>
-                </div>
+                </div> */}
+
               </motion.div>
               
               {/* Stats */}

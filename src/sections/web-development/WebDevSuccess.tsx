@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Check, Zap, Search, Layout, BarChart3, Smartphone, Users } from "lucide-react";
+import Image from "next/image";
 import { GridPattern } from "@/components/graphics/GridPattern";
 
 const successFactors = [
@@ -63,15 +64,15 @@ export function WebDevSuccess() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Website mockup illustration */}
-                <div className="relative aspect-[4/3] bg-gradient-to-br from-background via-muted/30 to-background rounded-xl border border-border/50 overflow-hidden">
-                  {/* Browser chrome */}
+                <Image src="/assets/images/webdevelopment/what-makes-a-high-converting-b2b-website.png" alt="Web development success" width={600} height={500} />
+                {/* <div className="relative aspect-[4/3] bg-gradient-to-br from-background via-muted/30 to-background rounded-xl border border-border/50 overflow-hidden">
+                  
                   <div className="absolute top-0 left-0 right-0 h-8 bg-muted/50 border-b border-border/50 flex items-center px-3 gap-1.5">
                     <div className="w-2.5 h-2.5 rounded-full bg-destructive/50" />
                     <div className="w-2.5 h-2.5 rounded-full bg-warning/50" />
                     <div className="w-2.5 h-2.5 rounded-full bg-success/50" />
                   </div>
                   
-                  {/* Content areas with labels */}
                   <div className="absolute top-12 left-4 right-4 bottom-4 grid grid-cols-3 gap-2">
                     <div className="col-span-2 space-y-2">
                       <div className="h-4 bg-primary/30 rounded animate-pulse" />
@@ -85,7 +86,6 @@ export function WebDevSuccess() {
                     </div>
                   </div>
                   
-                  {/* Floating annotations */}
                   <motion.div
                     className="absolute top-14 -right-2 glass-card px-2 py-1 rounded text-xs"
                     initial={{ opacity: 0, x: 10 }}
@@ -115,7 +115,8 @@ export function WebDevSuccess() {
                   >
                     <span className="text-success font-medium">Analytics</span>
                   </motion.div>
-                </div>
+                </div> */}
+                
               </motion.div>
               
               {/* Stats callout */}

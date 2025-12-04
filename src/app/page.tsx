@@ -15,6 +15,7 @@ import {
 } from "@/lib/seo";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 import { ProjectsGrid } from "@/sections/portfolio/ProjectsGrid";
+import { HomeWebPricing } from "@/components/pricing/HomeWebPricing";
 
 export const metadata: Metadata = genMeta(PAGE_SEO.home);
 
@@ -38,6 +39,7 @@ export default function HomePage() {
       <div className="[&_.grid]:lg:grid-cols-2">
         <ProjectsGrid />
       </div>
+      <HomeWebPricing />
       <SocialProofSection />
       <ProcessSection />
       <FAQSection />

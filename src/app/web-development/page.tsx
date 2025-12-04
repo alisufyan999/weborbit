@@ -7,6 +7,7 @@ import { WebDevUX } from "@/sections/web-development/WebDevUX";
 import { WebDevCopywriting } from "@/sections/web-development/WebDevCopywriting";
 import { WebDevDesign } from "@/sections/web-development/WebDevDesign";
 import { WebDevCTA } from "@/sections/web-development/WebDevCTA";
+import { ProjectsGrid } from "@/sections/portfolio/ProjectsGrid";
 import { PAGE_SEO, generateServiceSchema } from "@/lib/seo";
 import { generateMetadata as genMeta } from "@/lib/metadata";
 
@@ -24,7 +25,10 @@ export default function WebDevelopmentPage() {
       <WebDevHero />
       <WebDevSuccess />
       <WebDevAI />
-      <WebDevPortfolio />
+      {/* <WebDevPortfolio /> */}
+      <div className="[&_.grid]:lg:grid-cols-2">
+        <ProjectsGrid />
+      </div>
       <WebDevUX />
       <WebDevCopywriting />
       <WebDevDesign />

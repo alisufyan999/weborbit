@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Palette, Eye, Sparkles, Layers } from "lucide-react";
 import { GridPattern } from "@/components/graphics/GridPattern";
+import Image from "next/image";
 
 export function WebDevDesign() {
   return (
@@ -20,8 +21,11 @@ export function WebDevDesign() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Design showcase mockup */}
-                <div className="aspect-square bg-gradient-to-br from-primary/10 via-background to-secondary/10 rounded-xl p-6 relative overflow-hidden">
-                  {/* Abstract design elements */}
+
+                <Image src="/assets/images/webdevelopment/design-that-brings-your-brand-to-life.png" alt="Web development design" width={600} height={500} />
+                
+                {/* <div className="aspect-square bg-gradient-to-br from-primary/10 via-background to-secondary/10 rounded-xl p-6 relative overflow-hidden">
+                  
                   <motion.div
                     className="absolute top-8 left-8 w-32 h-32 rounded-2xl bg-gradient-to-br from-primary/30 to-primary/10 blur-sm"
                     animate={{ rotate: [0, 5, 0] }}
@@ -38,7 +42,6 @@ export function WebDevDesign() {
                     transition={{ duration: 5, repeat: Infinity }}
                   />
                   
-                  {/* Center content */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
                       <motion.div
@@ -52,7 +55,6 @@ export function WebDevDesign() {
                     </div>
                   </div>
                   
-                  {/* Design system dots */}
                   <div className="absolute bottom-6 left-6 flex gap-2">
                     {["primary", "secondary", "success", "muted"].map((color, i) => (
                       <motion.div
@@ -72,7 +74,8 @@ export function WebDevDesign() {
                       />
                     ))}
                   </div>
-                </div>
+                </div> */}
+
               </motion.div>
               
               {/* Testimonial */}
