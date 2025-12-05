@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { PortfolioHero } from "@/sections/portfolio/PortfolioHero";
 import { ProjectsGrid } from "@/sections/portfolio/ProjectsGrid";
+import { NewPortfolio } from "@/sections/portfolio/NewPortfolio";
 import { CaseStudySection } from "@/sections/portfolio/CaseStudySection";
 import { ResultsMetrics } from "@/sections/portfolio/ResultsMetrics";
 import { PortfolioCTA } from "@/sections/portfolio/PortfolioCTA";
@@ -23,9 +24,12 @@ export default function PortfolioPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <PortfolioHero />
-      <div className="[&_.grid]:lg:grid-cols-2">
+      <NewPortfolio />
+
+      {/* <div className="[&_.grid]:lg:grid-cols-2">
         <ProjectsGrid />
-      </div>
+      </div> */}
+
       <CaseStudySection />
       <ResultsMetrics />
       <PortfolioCTA />

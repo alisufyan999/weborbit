@@ -10,6 +10,7 @@ import { WebDevCTA } from "@/sections/web-development/WebDevCTA";
 import { ProjectsGrid } from "@/sections/portfolio/ProjectsGrid";
 import { PAGE_SEO, generateServiceSchema } from "@/lib/seo";
 import { generateMetadata as genMeta } from "@/lib/metadata";
+import { NewPortfolio } from "@/sections/portfolio/NewPortfolio";
 
 export const metadata: Metadata = genMeta(PAGE_SEO.webDevelopment);
 
@@ -26,9 +27,13 @@ export default function WebDevelopmentPage() {
       <WebDevSuccess />
       <WebDevAI />
       {/* <WebDevPortfolio /> */}
-      <div className="[&_.grid]:lg:grid-cols-2">
+
+      <NewPortfolio limit={9} />
+
+      {/* <div className="[&_.grid]:lg:grid-cols-2">
         <ProjectsGrid />
-      </div>
+      </div> */}
+
       <WebDevUX />
       <WebDevCopywriting />
       <WebDevDesign />

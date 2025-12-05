@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Zap } from "lucide-react";
 import Link from "next/link";
 import { AbstractShapes } from "@/components/graphics/AbstractShapes";
-import optimizationHeroImage from "@/assets/hero/optimization-hero.jpg";
+import optimizationHeroImage from "@/assets/weboptimization/banner.png";
 import Image from "next/image";
 
 export function OptimizationHero() {
