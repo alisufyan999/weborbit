@@ -2,5 +2,7 @@
   "/page": "app/page.js",
   "/portfolio/page": "app/portfolio/page.js",
   "/web-development/page": "app/web-development/page.js",
-  "/website-optimization/page": "app/website-optimization/page.js"
+  "/website-optimization/page": "app/website-optimization/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/services/page": "app/services/page.js"
 }
